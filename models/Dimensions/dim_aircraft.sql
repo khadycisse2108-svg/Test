@@ -1,5 +1,5 @@
 SELECT DISTINCT
-    aircraft_id , 
+    aircraft_id, 
     aircraft_type,
     mass,
     length,

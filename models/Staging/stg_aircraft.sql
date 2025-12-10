@@ -1,5 +1,5 @@
 SELECT 
-    "Aircraft_Id" AS aircraft_id , 
+    "Aircraft_Id" AS aircraft_id, 
     "Aircraft_Type" AS aircraft_type,
     "Mass" AS mass,
     "Length" AS length,

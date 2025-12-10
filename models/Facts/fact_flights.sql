@@ -1,7 +1,6 @@
+---"Which aircraft has flown the most?"
 SELECT
-    "Flight_Id",
-    "Aircraft_Id",
-    "Airline_Code",
-    "Departure_Airport_Code",
-    "Destination_Airport_Code"
-from {{ ref("stg_individual_flights") }}
+    f."Aircraft_Id",
+    COUNT(*) AS total_flights
+FROM {{ ref('dim_individual_flights') }} f
+GROUP BY f."Aircraft_Id"
