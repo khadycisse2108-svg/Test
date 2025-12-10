@@ -1,6 +1,6 @@
-SELECT DISTINCT
+SELECT
     "Airport_Code",
     "Airport_Employees",
     "Airport_Name",
     "Airport_Size"
-FROM {{ ref('stg_airports') }}
+FROM {{ source('RAW', 'AIRPORTS') }}
