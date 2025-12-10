@@ -1,10 +1,11 @@
 version: 2
 
 sources:
-  - name: raw
-    schema: public
+  - name: RAW
+    schema: PUBLIC
     tables:
-      - name: aircraft
-      - name: airlines
-      - name: airports
-      - name: flight_summary_data
+      - name: AIRCRAFT
+      - name: AIRLINES
+      - name: AIRPORTS
+      - name: FLIGHT_SUMMARY_DATA
+      - name: INDIVIDUAL_FLIGHTS

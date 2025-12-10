@@ -1,7 +1,8 @@
-{{ config(materialized='table') }}
-
 SELECT DISTINCT
-    aircraft_id,
-    model,
-    manufacturer
+    aircraft_id, 
+    aircraft_type,
+    mass,
+    length,
+    cost,
+    capacity
 FROM {{ ref('stg_aircraft') }}

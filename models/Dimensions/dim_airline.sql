@@ -1,7 +1,8 @@
-{{ config(materialized='table') }}
-
 SELECT DISTINCT
-    airline_code,
-    model,
-    manufacturer
+        airline_code,
+        airline_name,
+        description_airline,
+        market_cap,
+        employees,
+        age_employee
 FROM {{ ref('stg_airlines') }}
